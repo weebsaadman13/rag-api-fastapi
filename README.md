@@ -41,3 +41,28 @@ A **smart API** built with **FastAPI** that can answer questions based on conten
 ```bash
 git clone https://github.com/weebsaadman13/rag-api-fastapi.git
 cd rag-api-fastapi
+
+### 2) Create a Python Virtual Environment
+python -m venv venv
+
+### 3) Create a Python Virtual Environment
+
+Windows
+venv\Scripts\activate
+
+Mac / Linux
+source venv/bin/activate
+
+### 4)Install Dependencies
+pip install -r requirements.txt
+
+### 5)Add Environment Variables
+cp .env.example .env
+Open .env and add your keys:
+
+ini
+Copy code
+OPENAI_API_KEY=your_openai_api_key_here
+
+###6)Run the FastAPI Server
+uvicorn main:app --reload
