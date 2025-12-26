@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.DS_Store
+*.sqlite
+sample_files/*.pdf
+sample_files/*.docx
+sample_files/*.jpg
+sample_files/*.png

@@ -1,0 +1,2 @@
+This document describes a company invoice.
+Payment must be completed within 30 days.
