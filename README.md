@@ -66,3 +66,28 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ###6)Run the FastAPI Server
 uvicorn main:app --reload
+
+Example response:
+
+{
+  "file_id": "a1b2c3",
+  "filename": "sample_invoice.pdf",
+  "message": "File uploaded successfully."
+}
+
+POST /query
+
+{
+  "question": "What are the payment terms in the invoice?",
+  "image_base64": null
+}
+
+Sample response:
+
+{
+  "context": "Page 2: Payment Terms: Net 30 days …",
+  "answer": "The invoice payment terms are net 30 days.",
+  "sources": [
+    {"file": "sample_invoice.pdf", "page": 2, "chunk": 1}
+  ]
+}
